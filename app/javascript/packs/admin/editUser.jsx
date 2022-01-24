@@ -36,9 +36,14 @@ const openModal = async (event) => {
 
   const { h, render } = preact;
 
+  const size = potentialButton.getAttribute('data-modal-size') || 'default';
+  const modalClassName = potentialButton.getAttribute('data-modal-class');
+
   // TODO: Where are we pulling the modal body from?
   render(
-    <Modal title={potentialButton.innerHTML}>Hello</Modal>,
+    <Modal title={potentialButton.innerHTML} size={size}>
+      {document.getElementsByClassName(modalClassName)[0].innerHTML}
+    </Modal>,
     modalContainer,
   );
 };

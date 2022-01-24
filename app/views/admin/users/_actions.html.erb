@@ -15,8 +15,8 @@
             <%= f.button "Verify email address", class: "c-btn w-100 align-left", data: { "no-modal": "" } %>
           <% end %>
         <% end %>
-        <li><button type="button" class="c-btn w-100 align-left">Export data</button></li>
-        <li><button type="button" class="c-btn w-100 align-left">Merge accounts</button></li>
+        <li><button type="button" class="c-btn w-100 align-left" data-modal-size="s" data-modal-class="export-data-modal">Export data</button></li>
+        <li><button type="button" class="c-btn w-100 align-left" data-modal-size="s" data-modal-class="merge-accounts-modal">Merge accounts</button></li>
         <% if @user.articles_count > 0 %>
           <li><button type="button" class="c-btn w-100 align-left">Unpublish all posts</button></li>
         <% end %>
