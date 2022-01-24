@@ -1,11 +1,11 @@
-import { AdminUserActionsModal } from '@admin/AdminUserActionsModal';
 import { initializeDropdown } from '@utilities/dropdownUtils';
 
 let preact;
-let Modal;
+let AdminModal;
 
-const userEditActionsMenu = document.getElementById('options-dropdown');
-const overviewContainer = document.getElementById('overview-container');
+// Append an empty div to the end of the document so that is does not affect the layout.
+const modalContainer = document.createElement('div');
+document.body.appendChild(modalContainer);
 
 initializeDropdown({
   triggerElementId: 'options-dropdown-trigger',
@@ -13,40 +13,44 @@ initializeDropdown({
 });
 
 const openModal = async (event) => {
-  // Append an empty div to the end of the document so that is does not affect the layout.
-  const modalContainer = document.createElement('div');
-  document.body.appendChild(modalContainer);
+  const { dataset } = event.target;
 
-  const { target: potentialButton } = event;
-  if (
-    potentialButton.tagName !== 'BUTTON' ||
-    Object.prototype.hasOwnProperty.call(potentialButton.dataset, 'noModal')
-  ) {
-    // The button that was clicked does not require a modal.
+  if (!Object.prototype.hasOwnProperty.call(dataset, 'modalTrigger')) {
+    // We're not trying to trigger a modal.
     return;
   }
 
+  event.preventDefault();
+
   // Only load Preact if we haven't already.
-  if (!preact || !AdminUserActionsModal) {
-    [preact, { AdminUserActionsModal: Modal }] = await Promise.all([
+  if (!preact) {
+    [preact, { Modal: AdminModal }] = await Promise.all([
       import('preact'),
-      import('@admin'),
+      import('@crayons/Modal/Modal'),
     ]);
   }
 
   const { h, render } = preact;
 
-  const size = potentialButton.getAttribute('data-modal-size') || 'default';
-  const modalClassName = potentialButton.getAttribute('data-modal-class');
+  const { modalTitle, modalSize, modalContentSelector } = dataset;
 
-  // TODO: Where are we pulling the modal body from?
   render(
-    <Modal title={potentialButton.innerHTML} size={size}>
-      {document.getElementsByClassName(modalClassName)[0].innerHTML}
-    </Modal>,
+    <AdminModal
+      title={modalTitle}
+      size={modalSize}
+      onClose={() => {
+        render(null, modalContainer);
+      }}
+    >
+      <div
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{
+          __html: document.querySelector(modalContentSelector).innerHTML,
+        }}
+      />
+    </AdminModal>,
     modalContainer,
   );
 };
 
-overviewContainer?.addEventListener('click', openModal);
-userEditActionsMenu.addEventListener('click', openModal);
+document.body.addEventListener('click', openModal);
