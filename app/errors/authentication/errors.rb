@@ -13,7 +13,7 @@ module Authentication
       def message
         I18n.t("errors.authentication.errors.suspended",
                community_name: Settings::Community.community_name,
-               community_email: ForemInstance.email)
+               community_email: ForemInstance.contact_email)
       end
     end
 

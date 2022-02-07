@@ -13,6 +13,12 @@ class ForemInstance
     ApplicationConfig["DEFAULT_EMAIL"]
   end
 
+  def self.contact_email
+    # maybe  we call it community email
+    # or a contact email
+    ::Settings::SMTP.reply_to_email_address
+  end
+
   # Return true if we are operating on a local installation, false otherwise
   def self.local?
     Settings::General.app_domain.include?("localhost")
