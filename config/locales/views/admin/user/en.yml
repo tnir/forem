@@ -1,0 +1,43 @@
+---
+en:
+  views:
+    admin:
+      user:
+        profile:
+          visit_profile:
+          member_since:
+        overview:
+          analytics:
+            following:
+            singular:
+              comment:
+              reaction:
+              posts:
+              follower:
+              badge:
+            pluralized:
+              comments:
+              reactions:
+              posts:
+              followers:
+              badges:
+          assigned_roles:
+            header:
+            description:
+            # how do we handle the roles, tags in i8n
+            button:
+          tag_moderation:
+            header:
+            description:
+            notice:
+          organizations:
+            header:
+            description:
+            button:
+          credits:
+            description:
+            button:
+        notes:
+        emails:
+        reports:
+        flags:
