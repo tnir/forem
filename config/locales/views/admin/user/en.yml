@@ -4,12 +4,16 @@ en:
     admin:
       user:
         profile:
+          access_lock_title: "Access locked"
+          access_lock_link_name: Unlock Access
+          access_lock_description: This user has locked access
           visit_profile:
-          member_since:
+          member_since: "Member since"
+          invitation_not_accepted: "User has not accepted their invitation yet"
         tabs:
           overview:
-            header:
-            analytics:
+            header: "Overview"
+            stats:
               following:
               singular:
                 comment:
@@ -40,6 +44,10 @@ en:
               description:
               button:
           notes:
+            header: "Notes"
           emails:
+            header: "Emails"
           reports:
+            header: "Reports"
           flags:
+            header: "Flags"
