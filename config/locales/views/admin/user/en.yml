@@ -28,10 +28,22 @@ en:
                 followers: Followers
                 badges: Badges
             assigned_roles:
-              header:
-              description:
-              # how do we handle the roles, tags in i8n
-              button:
+              title: "Assigned roles"
+              header: Assigned roles
+              description: Assign roles to this member based on permissions
+              none: No special roles assigned yet
+              button: Add role
+              tooltip: You can't remove this role...
+              remove_role: Remove Role
+              add_role: Add Role
+              modal:
+                field1:
+                  name: "Role"
+                  placeholder: "Select..."
+                field2:
+                  name: "Reason"
+                  placeholder: "What's the reason for adding a role?"
+                button: "Add"
             tag_moderation:
               header:
               description:
@@ -43,6 +55,8 @@ en:
             credits:
               description:
               button:
+            learn_more_link_name: Learn more
+            learn_more_aria_label: "Learn more about roles"
           notes:
             header: "Notes"
           emails:
