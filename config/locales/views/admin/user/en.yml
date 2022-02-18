@@ -14,19 +14,19 @@ en:
           overview:
             header: "Overview"
             stats:
-              following:
+              following: Following
               singular:
-                comment:
-                reaction:
-                posts:
-                follower:
-                badge:
+                comment: Comment
+                reaction: Reaction
+                posts: Post
+                follower: Follower
+                badge: Badge
               pluralized:
-                comments:
-                reactions:
-                posts:
-                followers:
-                badges:
+                comments: Comments
+                reactions: Reactions
+                posts: Posts
+                followers: Followers
+                badges: Badges
             assigned_roles:
               header:
               description:
