@@ -26,7 +26,8 @@
     "test:watch": "jest app/javascript/ bin/ --watch",
     "postcss": "postcss public/assets/*.css -d public/assets 2> postcss_error.log",
     "e2e": "bin/e2e",
-    "e2e:creator-onboarding-seed": "yarn run e2e --creator-onboarding-seed"
+    "e2e:creator-onboarding-seed": "yarn run e2e --creator-onboarding-seed",
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -141,6 +142,8 @@
     "prop-types": "^15.8.1",
     "rails-erb-loader": "^5.5.2",
     "react-colorful": "^5.5.1",
-    "web-share-wrapper": "^0.2.2"
+    "web-share-wrapper": "^0.2.2",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
   }
 }
