@@ -95,8 +95,7 @@
     "storybook-addon-jsx": "^7.3.14",
     "style-loader": "^2.0.0",
     "svgo": "2.8.0",
-    "webpack-bundle-analyzer": "^4.5.0",
-    "webpack-dev-server": "^3.11.3"
+    "webpack-bundle-analyzer": "^4.5.0"
   },
   "dependencies": {
     "@babel/core": "^7.17.9",
@@ -111,7 +110,6 @@
     "@hotwired/stimulus": "3.0.1",
     "@hotwired/stimulus-webpack-helpers": "1.0.1",
     "@rails/ujs": "7.0.2",
-    "@rails/webpacker": "5.4.3",
     "@reach/combobox": "^0.16.5",
     "@storybook/addon-backgrounds": "^6.4.21",
     "@storybook/addon-controls": "^6.4.21",
