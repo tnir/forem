@@ -1,5 +1,5 @@
 <% if FeatureFlag.enabled?(:member_index_view) %>
-  <%= javascript_packs_with_chunks_tag "admin/users/memberIndex", defer: true %>
+  <%= javascript_include_tag "admin/users/memberIndex", defer: true %>
 
   <div class="crayons-card p-3 p-4 xl:p-0">
     <header class="flex flex-col p-4 xl:p-7 pb-4">
