@@ -27,7 +27,7 @@
     "postcss": "postcss public/assets/*.css -d public/assets 2> postcss_error.log",
     "e2e": "bin/e2e",
     "e2e:creator-onboarding-seed": "yarn run e2e --creator-onboarding-seed",
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config config/webpack/webpack.config.js"
   },
   "repository": {
     "type": "git",
