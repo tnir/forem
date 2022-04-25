@@ -3,8 +3,7 @@ FROM buildpack-deps:jammy AS base
 COPY install-packages upgrade-packages /usr/bin/
 
 ### base ###
-RUN yes | unminimize \
-    && install-packages \
+RUN install-packages \
         zip \
         unzip \
         bash-completion \
