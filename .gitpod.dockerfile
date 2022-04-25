@@ -70,10 +70,10 @@ ENV PGWORKSPACE="/workspace/.pgsql"
 ENV PGDATA="$PGWORKSPACE/data"
 
 # Install PostgreSQL
-RUN sudo install-packages postgresql-12 postgresql-contrib-12
+RUN sudo install-packages postgresql-14 postgresql-contrib-14
 
 # Setup PostgreSQL server for user gitpod
-ENV PATH="/usr/lib/postgresql/12/bin:$PATH"
+ENV PATH="/usr/lib/postgresql/14/bin:$PATH"
 
 SHELL ["/usr/bin/bash", "-c"]
 RUN PGDATA="${PGDATA//\/workspace/$HOME}" \
