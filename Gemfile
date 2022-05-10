@@ -37,7 +37,7 @@ gem "flipper", "~> 0.24.1" # Feature flipping / flags for Ruby
 gem "flipper-active_record", "~> 0.24.1" # Store Flipper flags in ActiveRecord
 gem "flipper-active_support_cache_store", "~> 0.24.1" # Cache feature flags for a short time
 gem "flipper-ui", "~> 0.24.1"
-gem "fog-aws", "~> 3.13" # 'fog' gem to support Amazon Web Services
+gem "fog-aws", "~> 3.14" # 'fog' gem to support Amazon Web Services
 gem "front_matter_parser", "~> 1.0" # Parse a front matter from syntactically correct strings or files
 gem "gemoji", "~> 4.0.0.rc3" # Character information and metadata for standard and custom emoji
 gem "gibbon", "~> 3.4" # API wrapper for MailChimp's API
@@ -122,7 +122,7 @@ group :development do
   gem "erb_lint", "~> 0.0.37", require: false # ERB Linter tool
   gem "guard", "~> 2.18", require: false # Guard is a command line tool to easily handle events on file system modifications
   gem "guard-livereload", "~> 2.5", require: false # Guard::LiveReload automatically reloads your browser when 'view' files are modified
-  gem "i18n-tasks", "~> 1.0.9" # Helpers to find and manage missing and unused translations
+  gem "i18n-tasks", "~> 1.0.10" # Helpers to find and manage missing and unused translations
   gem "listen", "~> 3.7", require: false # Helps 'listen' to file system modifications events (also used by other gems like guard)
   gem "memory_profiler", "~> 1.0", require: false # Memory profiling routines for Ruby 2.3+
   gem "solargraph", "~> 0.44", require: false # For LSP support (such as symbol renaming, documentation lookup)
@@ -136,7 +136,7 @@ end
 group :development, :test do
   gem "amazing_print", "~> 1.4" # Great Ruby debugging companion: pretty print Ruby objects to visualize their structure
   gem "bullet", "~> 7.0" # help to kill N+1 queries and unused eager loading
-  gem "capybara", "~> 3.36.0" # Capybara is an integration testing tool for rack based web applications
+  gem "capybara", "~> 3.37.1" # Capybara is an integration testing tool for rack based web applications
   gem "cypress-rails", "~> 0.5" # For end to end tests (E2E)
   gem "debug", ">= 1.0.0" # Provide a debug with step capabilities
   gem "dotenv-rails", "~> 2.7.6" # For loading ENV variables locally
