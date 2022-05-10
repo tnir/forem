@@ -79,7 +79,7 @@ gem "rack-attack", "~> 6.6.1" # Used to throttle requests to prevent brute force
 gem "rack-cors", "~> 1.1" # Middleware that will make Rack-based apps CORS compatible
 gem "rack-timeout", "~> 0.6" # Rack middleware which aborts requests that have been running for longer than a specified timeout
 gem "rails", "~> 7.0.2.2" # Ruby on Rails
-gem "ransack", "~> 3.1" # Searching and sorting
+gem "ransack", "~> 3.2" # Searching and sorting
 gem "recaptcha", "~> 5.10", require: "recaptcha/rails" # Helpers for the reCAPTCHA API
 gem "redcarpet", "~> 3.5" # A fast, safe and extensible Markdown to (X)HTML parser
 
@@ -122,7 +122,7 @@ group :development do
   gem "erb_lint", "~> 0.0.37", require: false # ERB Linter tool
   gem "guard", "~> 2.18", require: false # Guard is a command line tool to easily handle events on file system modifications
   gem "guard-livereload", "~> 2.5", require: false # Guard::LiveReload automatically reloads your browser when 'view' files are modified
-  gem "i18n-tasks", "~> 1.0.9" # Helpers to find and manage missing and unused translations
+  gem "i18n-tasks", "~> 1.0.10" # Helpers to find and manage missing and unused translations
   gem "listen", "~> 3.7", require: false # Helps 'listen' to file system modifications events (also used by other gems like guard)
   gem "memory_profiler", "~> 1.0", require: false # Memory profiling routines for Ruby 2.3+
   gem "solargraph", "~> 0.44", require: false # For LSP support (such as symbol renaming, documentation lookup)
@@ -136,7 +136,7 @@ end
 group :development, :test do
   gem "amazing_print", "~> 1.4" # Great Ruby debugging companion: pretty print Ruby objects to visualize their structure
   gem "bullet", "~> 7.0" # help to kill N+1 queries and unused eager loading
-  gem "capybara", "~> 3.36.0" # Capybara is an integration testing tool for rack based web applications
+  gem "capybara", "~> 3.37.1" # Capybara is an integration testing tool for rack based web applications
   gem "cypress-rails", "~> 0.5" # For end to end tests (E2E)
   gem "debug", ">= 1.0.0" # Provide a debug with step capabilities
   gem "dotenv-rails", "~> 2.7.6" # For loading ENV variables locally
