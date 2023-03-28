@@ -78,7 +78,7 @@ gem "pundit", "~> 2.2" # Object oriented authorization for Rails applications
 gem "rack-attack", "~> 6.6.1" # Used to throttle requests to prevent brute force attacks
 gem "rack-cors", "~> 1.1" # Middleware that will make Rack-based apps CORS compatible
 gem "rack-timeout", "~> 0.6" # Rack middleware which aborts requests that have been running for longer than a specified timeout
-gem "rails", "~> 7.0.3.1" # Ruby on Rails
+gem "rails", "~> 7.0.4.3" # Ruby on Rails
 gem "ransack", "~> 3.2" # Searching and sorting
 gem "recaptcha", "~> 5.10", require: "recaptcha/rails" # Helpers for the reCAPTCHA API
 gem "redcarpet", "~> 3.5" # A fast, safe and extensible Markdown to (X)HTML parser
@@ -94,7 +94,7 @@ gem "rolify", "~> 6.0" # Very simple Roles library
 gem "rouge", "~> 3.30" # A pure-ruby code highlighter
 gem "rss", "~> 0.2.9" # Ruby's standard library for RSS
 gem "rubyzip", "~> 2.3" # Rubyzip is a ruby library for reading and writing zip files
-gem "s3_direct_upload", "~> 0.1" # Direct Upload to Amazon S3
+gem "s3_direct_upload", "~> 0.1", ">= 0.1.7" # Direct Upload to Amazon S3
 gem "sidekiq", "~> 6.5.3" # Sidekiq is used to process background jobs with the help of Redis
 gem "sidekiq-cron", "~> 1.7" # Allows execution of scheduled cron jobs as specific times
 gem "sidekiq-unique-jobs", "~> 7.1.27" # Ensures that Sidekiq jobs are unique when enqueued
