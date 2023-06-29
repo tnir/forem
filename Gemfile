@@ -24,15 +24,15 @@ gem "carrierwave-bombshelter", "~> 0.2" # Protect your carrierwave from image bo
 gem "cloudinary", "~> 1.23" # Client library for easily using the Cloudinary service
 gem "counter_culture", "~> 3.2" # counter_culture provides turbo-charged counter caches that are kept up-to-date
 gem "ddtrace", "~> 1.3.0" # ddtrace is Datadog’s tracing client for Ruby.
-gem "devise", "~> 4.8" # Flexible authentication solution for Rails
-gem "devise_invitable", "~> 2.0.6" # Allows invitations to be sent for joining
+gem "devise", "~> 4.9", ">= 4.9.0" # Flexible authentication solution for Rails
+gem "devise_invitable", "~> 2.0.7" # Allows invitations to be sent for joining
 gem "dogstatsd-ruby", "~> 4.8" # A client for DogStatsD, an extension of the StatsD metric server for Datadog
 gem "email_validator", "~> 2.2" # Email validator for Rails and ActiveModel
 gem "emoji_regex", "~> 3.2" # A pair of Ruby regular expressions for matching Unicode Emoji symbols
 gem "fastimage", "~> 2.2" # FastImage finds the size or type of an image given its uri by fetching as little as needed.
 gem "fastly", "~> 3.0" # Client library for the Fastly acceleration system
 gem "feedjira", "~> 3.2" # A feed fetching and parsing library
-gem "field_test", "~> 0.5" # A/B testing
+gem "field_test", "~> 0.5", ">= 0.5.5" # A/B testing
 gem "flipper", "~> 0.25.0" # Feature flipping / flags for Ruby
 gem "flipper-active_record", "~> 0.25.0" # Store Flipper flags in ActiveRecord
 gem "flipper-active_support_cache_store", "~> 0.25.0" # Cache feature flags for a short time
@@ -51,7 +51,7 @@ gem "i18n-js", "~> 3.9.2" # Helps with internationalization in Rails.
 gem "imgproxy", "~> 2.1" # A gem that easily generates imgproxy URLs for your images
 gem "inline_svg", "~> 1.8" # Embed SVG documents in your Rails views and style them with CSS
 gem "jbuilder", "~> 2.11" # Create JSON structures via a Builder-style DSL
-gem "js-routes", "~> 2.2" # Brings Rails named routes to javascript
+gem "js-routes", "~> 2.2", ">= 2.2.5" # Brings Rails named routes to javascript
 gem "jsonapi-serializer", "~> 2.2" # Serializer for Ruby objects
 gem "kaminari", "~> 1.2" # A Scope & Engine based, clean, powerful, customizable and sophisticated paginator
 gem "katex", "~> 0.9.0" # This rubygem enables you to render TeX math to HTML using KaTeX. It uses ExecJS under the hood
@@ -78,7 +78,7 @@ gem "pundit", "~> 2.2" # Object oriented authorization for Rails applications
 gem "rack-attack", "~> 6.6.1" # Used to throttle requests to prevent brute force attacks
 gem "rack-cors", "~> 1.1" # Middleware that will make Rack-based apps CORS compatible
 gem "rack-timeout", "~> 0.6" # Rack middleware which aborts requests that have been running for longer than a specified timeout
-gem "rails", "~> 7.0.3.1" # Ruby on Rails
+gem "rails", "~> 7.0.5.1" # Ruby on Rails
 gem "ransack", "~> 3.2" # Searching and sorting
 gem "recaptcha", "~> 5.10", require: "recaptcha/rails" # Helpers for the reCAPTCHA API
 gem "redcarpet", "~> 3.5" # A fast, safe and extensible Markdown to (X)HTML parser
@@ -110,7 +110,7 @@ gem "validate_url", "~> 1.0" # Library for validating urls in Rails
 gem "vault", "~> 0.17" # Used to store secrets
 gem "warning", "~> 1.3" # Adds custom processing for warnings, including the ability to ignore specific warning messages
 gem "wcag_color_contrast", "~> 0.1" # Detect contrast of colors to determine readability and a11y.
-gem "webpacker", "~> 5.4.3" # Use webpack to manage app-like JavaScript modules in Rails
+gem "webpacker", "~> 5.4.4" # Use webpack to manage app-like JavaScript modules in Rails
 
 group :development do
   gem "better_errors", "~> 2.9" # Provides a better error page for Rails and other Rack apps
@@ -123,7 +123,7 @@ group :development do
   gem "foreman", "~> 0.87" # Process manager for applications with multiple components
   gem "guard", "~> 2.18", require: false # Guard is a command line tool to easily handle events on file system modifications
   gem "guard-rspec", "~> 4.7", require: false # Guard::Rspec includes a DSL for running tests on change
-  gem "i18n-tasks", "~> 1.0.11" # Helpers to find and manage missing and unused translations
+  gem "i18n-tasks", "~> 1.0.12" # Helpers to find and manage missing and unused translations
   gem "listen", "~> 3.7", require: false # Helps 'listen' to file system modifications events (also used by other gems like guard)
   gem "memory_profiler", "~> 1.0", require: false # Memory profiling routines for Ruby 2.3+
   gem "solargraph", "~> 0.45", require: false # For LSP support (such as symbol renaming, documentation lookup)
@@ -138,15 +138,15 @@ group :development, :test do
   gem "amazing_print", "~> 1.4" # Great Ruby debugging companion: pretty print Ruby objects to visualize their structure
   gem "bullet", "~> 7.0" # help to kill N+1 queries and unused eager loading
   gem "capybara", "~> 3.37.1" # Capybara is an integration testing tool for rack based web applications
-  gem "cypress-rails", "~> 0.5" # For end to end tests (E2E)
+  gem "cypress-rails", "~> 0.5", ">= 0.5.5" # For end to end tests (E2E)
   gem "debug", ">= 1.0.0" # Provide a debug with step capabilities
   gem "dotenv-rails", "~> 2.8.1" # For loading ENV variables locally
   gem "faker", "~> 2.22" # A library for generating fake data such as names, addresses, and phone numbers
   gem "knapsack_pro", "~> 3.3.1" # Help parallelize Ruby spec builds
   gem "pry", "~> 0.14" # An IRB alternative and runtime developer console
   gem "pry-rails", "~> 0.3" # Use Pry as your rails console
-  gem "rspec-rails", "~> 5.1" # rspec-rails is a testing framework for Rails 3+
-  gem "rswag-specs", "~> 2.5.1" # RSwag - Swagger-based DSL for rspec & accompanying rake task for generating Swagger files
+  gem "rspec-rails", "~> 6.0", ">= 6.0.0" # rspec-rails is a testing framework for Rails 3+
+  gem "rswag-specs", "~> 2.6.0" # RSwag - Swagger-based DSL for rspec & accompanying rake task for generating Swagger files
   gem "rubocop", "~> 1.33", require: false # Automatic Ruby code style checking tool
   gem "rubocop-performance", "~> 1.14", require: false # A collection of RuboCop cops to check for performance optimizations in Ruby code
   gem "rubocop-rails", "~> 2.15", require: false # Automatic Rails code style checking tool
@@ -160,7 +160,7 @@ group :test do
   gem "factory_bot_rails", "~> 6.2" # factory_bot is a fixtures replacement with a straightforward definition syntax, support for multiple build strategies
   gem "fakeredis", "~> 0.8.0" # Fake (In-memory) driver for redis-rb. Useful for testing environment and machines without Redis.
   gem "launchy", "~> 2.5" # Launchy is helper class for launching cross-platform applications in a fire and forget manner.
-  gem "pundit-matchers", "~> 1.7" # A set of RSpec matchers for testing Pundit authorisation policies
+  gem "pundit-matchers", "~> 1.8", ">= 1.8.1" # A set of RSpec matchers for testing Pundit authorisation policies
   gem "rspec-retry", "~> 0.6" # retry intermittently failing rspec examples
   gem "ruby-prof", "~> 1.4", require: false # ruby-prof is a fast code profiler for Ruby
   gem "shoulda-matchers", "~> 5.1.0", require: false # Simple one-liner tests for common Rails functionality
