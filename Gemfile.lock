@@ -428,8 +428,8 @@ GEM
     js-routes (2.2.7)
       railties (>= 4)
     json (2.6.3)
-    json-schema (2.8.1)
-      addressable (>= 2.4)
+    json-schema (3.0.0)
+      addressable (>= 2.8)
     jsonapi-serializer (2.2.0)
       activesupport (>= 4.2)
     jwt (2.5.0)
@@ -474,7 +474,7 @@ GEM
     listen (3.8.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
-    loofah (2.21.3)
+    loofah (2.21.4)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
     lumberjack (1.2.9)
@@ -743,10 +743,11 @@ GEM
       rspec-core (>= 2, < 4, != 2.12.0)
     rss (0.2.9)
       rexml
-    rswag-specs (2.5.1)
-      activesupport (>= 3.1, < 7.1)
-      json-schema (~> 2.2)
-      railties (>= 3.1, < 7.1)
+    rswag-specs (2.11.0)
+      activesupport (>= 3.1, < 7.2)
+      json-schema (>= 2.2, < 4.0)
+      railties (>= 3.1, < 7.2)
+      rspec-core (>= 2.14)
     rubocop (1.56.3)
       base64 (~> 0.1.1)
       json (~> 2.3)
@@ -1086,7 +1087,7 @@ DEPENDENCIES
   rspec-retry (~> 0.6)
   rspec_junit_formatter (~> 0.6)
   rss (~> 0.2.9)
-  rswag-specs (~> 2.5.1)
+  rswag-specs (~> 2.11.0)
   rubocop (~> 1.42)
   rubocop-performance (~> 1.14)
   rubocop-rails (~> 2.15)
@@ -1129,7 +1130,7 @@ DEPENDENCIES
   zonebie (~> 0.6.1)
 
 RUBY VERSION
-   ruby 3.1.4p223
+   ruby 2.7.8p225
 
 BUNDLED WITH
    2.4.17
