@@ -14,10 +14,10 @@ gem "active_record_union", "~> 1.3" # Adds proper union and union_all methods to
 gem "acts-as-taggable-on", "~> 9.0" # A tagging plugin for Rails applications that allows for custom tagging along dynamic contexts
 gem "acts_as_follower", github: "forem/acts_as_follower", branch: "master" # Allow any model to follow any other model
 gem "addressable", "~> 2.8" # A replacement for the URI implementation that is part of Ruby's standard library
-gem "ahoy_email", "~> 2.1.3" # Email analytics for Rails
+gem "ahoy_email", "~> 2.2.0" # Email analytics for Rails
 gem "ahoy_matey", "~> 4.1" # Tracking analytics for Rails
 gem "ancestry", "~> 4.2" # Ancestry allows the records of a ActiveRecord model to be organized in a tree structure
-gem "blazer", "~> 2.6" # Allows admins to query data
+gem "blazer", "~> 3.0", ">= 3.0.0" # Allows admins to query data
 gem "bootsnap", ">= 1.1.0", require: false # Boot large ruby/rails apps faster
 gem "carrierwave", "~> 2.2" # Upload files in your Ruby applications, map them to a range of ORMs, store them on different backends
 gem "carrierwave-bombshelter", "~> 0.2" # Protect your carrierwave from image bombs
@@ -80,7 +80,7 @@ gem "pundit", "~> 2.2" # Object oriented authorization for Rails applications
 gem "rack-attack", "~> 6.6.1" # Used to throttle requests to prevent brute force attacks
 gem "rack-cors", "~> 1.1" # Middleware that will make Rack-based apps CORS compatible
 gem "rack-timeout", "~> 0.6" # Rack middleware which aborts requests that have been running for longer than a specified timeout
-gem "rails", "~> 7.0.7.2" # Ruby on Rails
+gem "rails", "~> 7.1.0.0" # Ruby on Rails
 gem "ransack", "~> 3.2" # Searching and sorting
 gem "recaptcha", "~> 5.10", require: "recaptcha/rails" # Helpers for the reCAPTCHA API
 gem "redcarpet", "~> 3.5" # A fast, safe and extensible Markdown to (X)HTML parser
@@ -129,7 +129,7 @@ group :development do
   gem "memory_profiler", "~> 1.0", require: false # Memory profiling routines for Ruby 2.3+
   gem "solargraph", "~> 0.45", require: false # For LSP support (such as symbol renaming, documentation lookup)
   gem "solargraph-rails", "~> 0.3.1", require: false # For LSP support with Rails
-  gem "web-console", "~> 4.2" # Rails Console on the Browser
+  gem "web-console", "~> 4.2", ">= 4.2.1" # Rails Console on the Browser
   gem "yard", "~> 0.9" # Documentation format
   gem "yard-activerecord", "~> 0.0" # Yard extension for ActiveRecord
   gem "yard-activesupport-concern", "~> 0.0" # Yard extension for ActiveRecord::Concern
@@ -146,7 +146,7 @@ group :development, :test do
   gem "knapsack_pro", "~> 5.1" # Help parallelize Ruby spec builds
   gem "pry", "~> 0.14" # An IRB alternative and runtime developer console
   gem "pry-rails", "~> 0.3" # Use Pry as your rails console
-  gem "rspec-rails", "~> 6.0" # rspec-rails is a testing framework for Rails 3+
+  gem "rspec-rails", "~> 6.0", ">= 6.0.2" # rspec-rails is a testing framework for Rails 3+
   gem "rspec_junit_formatter", "~> 0.6" # RSpec formatter for JUnit XML output
   gem "rswag-specs", "~> 2.5.1" # RSwag - Swagger-based DSL for rspec & accompanying rake task for generating Swagger files
   gem "rubocop", "~> 1.42", require: false # Automatic Ruby code style checking tool
@@ -162,7 +162,7 @@ group :test do
   gem "factory_bot_rails", "~> 6.2" # factory_bot is a fixtures replacement with a straightforward definition syntax, support for multiple build strategies
   gem "fakeredis", "~> 0.8.0" # Fake (In-memory) driver for redis-rb. Useful for testing environment and machines without Redis.
   gem "launchy", "~> 2.5" # Launchy is helper class for launching cross-platform applications in a fire and forget manner.
-  gem "pundit-matchers", "~> 1.7" # A set of RSpec matchers for testing Pundit authorisation policies
+  gem "pundit-matchers", "~> 2.0", ">= 2.0.0" # A set of RSpec matchers for testing Pundit authorisation policies
   gem "rspec-retry", "~> 0.6" # retry intermittently failing rspec examples
   gem "ruby-prof", "~> 1.4", require: false # ruby-prof is a fast code profiler for Ruby
   gem "shoulda-matchers", "~> 5.3", require: false # Simple one-liner tests for common Rails functionality
