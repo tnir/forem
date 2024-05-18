@@ -96,7 +96,7 @@ gem "request_store", "~> 1.5" # RequestStore gives you per-request global storag
 gem "reverse_markdown", "~> 2.1" # Map simple html back into markdown
 gem "rolify", "~> 6.0" # Very simple Roles library
 gem "rouge", "~> 4.2" # A pure-ruby code highlighter
-gem "rss", "~> 0.2.9" # Ruby's standard library for RSS
+gem "rss", "~> 0.3.0" # Ruby's standard library for RSS
 gem "rubyzip", "~> 2.3" # Rubyzip is a ruby library for reading and writing zip files
 gem "s3_direct_upload", "~> 0.1" # Direct Upload to Amazon S3
 gem "sidekiq", "~> 6.5.3" # Sidekiq is used to process background jobs with the help of Redis
@@ -129,7 +129,7 @@ group :development do
   gem "listen", "~> 3.7", require: false # Helps 'listen' to file system modifications events (also used by other gems like guard)
   gem "memory_profiler", "~> 1.0", require: false # Memory profiling routines for Ruby 2.3+
   gem "solargraph", "~> 0.45", require: false # For LSP support (such as symbol renaming, documentation lookup)
-  gem "solargraph-rails", "~> 0.3.1", require: false # For LSP support with Rails
+  gem "solargraph-rails", "~> 1.1.0", require: false # For LSP support with Rails
   gem "web-console", "~> 4.2" # Rails Console on the Browser
   gem "yard", "~> 0.9" # Documentation format
   gem "yard-activerecord", "~> 0.0" # Yard extension for ActiveRecord
@@ -150,10 +150,10 @@ group :development, :test do
   gem "rspec-rails", "~> 6.0", ">= 6.0.3" # rspec-rails is a testing framework for Rails 3+
   gem "rspec_junit_formatter", "~> 0.6" # RSpec formatter for JUnit XML output
   gem "rswag-specs", "~> 2.5.1" # RSwag - Swagger-based DSL for rspec & accompanying rake task for generating Swagger files
-  gem "rubocop", "~> 1.42", require: false # Automatic Ruby code style checking tool
+  gem "rubocop", "~> 1.63", ">= 1.63.5", require: false # Automatic Ruby code style checking tool
   gem "rubocop-performance", "~> 1.14", require: false # A collection of RuboCop cops to check for performance optimizations in Ruby code
-  gem "rubocop-rails", "~> 2.15", require: false # Automatic Rails code style checking tool
-  gem "rubocop-rspec", "~> 2.12", require: false # Code style checking for RSpec files
+  gem "rubocop-rails", "~> 2.25", ">= 2.25.0", require: false # Automatic Rails code style checking tool
+  gem "rubocop-rspec", "~> 2.29", ">= 2.29.2", require: false # Code style checking for RSpec files
   gem "sassc-rails", "~> 2.1.2" # Integrate SassC-Ruby into Rails
 end
 
