@@ -158,7 +158,7 @@ group :development, :test do
 end
 
 group :test do
-  gem "cuprite", "~> 0.13" # Capybara driver for Chrome
+  gem "cuprite", "~> 0.15", ">= 0.15.1" # Capybara driver for Chrome
   gem "exifr", ">= 1.3.6" # EXIF Reader is a module to read EXIF from JPEG and TIFF images
   gem "factory_bot_rails", "~> 6.2" # factory_bot is a fixtures replacement with a straightforward definition syntax, support for multiple build strategies
   gem "fakeredis", "~> 0.8.0" # Fake (In-memory) driver for redis-rb. Useful for testing environment and machines without Redis.
