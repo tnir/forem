@@ -126,7 +126,7 @@ group :development do
   gem "erb_lint", "~> 0.3", require: false # ERB Linter tool
   gem "guard", "~> 2.18", require: false # Guard is a command line tool to easily handle events on file system modifications
   gem "guard-rspec", "~> 4.7", require: false # Guard::Rspec includes a DSL for running tests on change
-  gem "i18n-tasks", "~> 1.0.11" # Helpers to find and manage missing and unused translations
+  gem "i18n-tasks", "~> 1.0.14" # Helpers to find and manage missing and unused translations
   gem "listen", "~> 3.7", require: false # Helps 'listen' to file system modifications events (also used by other gems like guard)
   gem "memory_profiler", "~> 1.0", require: false # Memory profiling routines for Ruby 2.3+
   gem "solargraph", "~> 0.45", require: false # For LSP support (such as symbol renaming, documentation lookup)
@@ -164,7 +164,7 @@ group :test do
   gem "factory_bot_rails", "~> 6.2" # factory_bot is a fixtures replacement with a straightforward definition syntax, support for multiple build strategies
   gem "fakeredis", "~> 0.8.0" # Fake (In-memory) driver for redis-rb. Useful for testing environment and machines without Redis.
   gem "launchy", "~> 2.5" # Launchy is helper class for launching cross-platform applications in a fire and forget manner.
-  gem "pundit-matchers", "~> 1.7" # A set of RSpec matchers for testing Pundit authorisation policies
+  gem "pundit-matchers", "~> 3.0", ">= 3.0.0" # A set of RSpec matchers for testing Pundit authorisation policies
   gem "rspec-retry", "~> 0.6" # retry intermittently failing rspec examples
   gem "ruby-prof", "~> 1.4", require: false # ruby-prof is a fast code profiler for Ruby
   gem "shoulda-matchers", "~> 5.3", require: false # Simple one-liner tests for common Rails functionality
