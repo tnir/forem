@@ -98,7 +98,7 @@ gem "request_store", "~> 1.5" # RequestStore gives you per-request global storag
 gem "reverse_markdown", "~> 2.1" # Map simple html back into markdown
 gem "rolify", "~> 6.0" # Very simple Roles library
 gem "rouge", "~> 4.2" # A pure-ruby code highlighter
-gem "rss", "~> 0.2.9" # Ruby's standard library for RSS
+gem "rss", "~> 0.3.0" # Ruby's standard library for RSS
 gem "rubyzip", "~> 2.3" # Rubyzip is a ruby library for reading and writing zip files
 gem "s3_direct_upload", "~> 0.1" # Direct Upload to Amazon S3
 gem "sidekiq", "~> 6.5.3" # Sidekiq is used to process background jobs with the help of Redis
@@ -123,14 +123,14 @@ group :development do
   gem "bundler-audit", "~> 0.9" # bundler-audit provides patch-level verification for Bundled apps
   gem "derailed_benchmarks", "~> 2.1", require: false # A series of things you can use to benchmark a Rails or Ruby app
   gem "easy_translate", "~> 0.5.1" # Google translate tie-in to be used with i18n tasks
-  gem "erb_lint", "~> 0.3", require: false # ERB Linter tool
+  gem "erb_lint", "~> 0.6", ">= 0.6.0", require: false # ERB Linter tool
   gem "guard", "~> 2.18", require: false # Guard is a command line tool to easily handle events on file system modifications
   gem "guard-rspec", "~> 4.7", require: false # Guard::Rspec includes a DSL for running tests on change
   gem "i18n-tasks", "~> 1.0.11" # Helpers to find and manage missing and unused translations
   gem "listen", "~> 3.7", require: false # Helps 'listen' to file system modifications events (also used by other gems like guard)
   gem "memory_profiler", "~> 1.0", require: false # Memory profiling routines for Ruby 2.3+
-  gem "solargraph", "~> 0.45", require: false # For LSP support (such as symbol renaming, documentation lookup)
-  gem "solargraph-rails", "~> 0.3.1", require: false # For LSP support with Rails
+  gem "solargraph", "~> 0.51", ">= 0.51.0", require: false # For LSP support (such as symbol renaming, documentation lookup)
+  gem "solargraph-rails", "~> 1.1.0", require: false # For LSP support with Rails
   gem "web-console", "~> 4.2" # Rails Console on the Browser
   gem "yard", "~> 0.9" # Documentation format
   gem "yard-activerecord", "~> 0.0" # Yard extension for ActiveRecord
@@ -151,10 +151,10 @@ group :development, :test do
   gem "rspec-rails", "~> 6.0", ">= 6.0.3" # rspec-rails is a testing framework for Rails 3+
   gem "rspec_junit_formatter", "~> 0.6" # RSpec formatter for JUnit XML output
   gem "rswag-specs", "~> 2.5.1" # RSwag - Swagger-based DSL for rspec & accompanying rake task for generating Swagger files
-  gem "rubocop", "~> 1.42", require: false # Automatic Ruby code style checking tool
-  gem "rubocop-performance", "~> 1.14", require: false # A collection of RuboCop cops to check for performance optimizations in Ruby code
-  gem "rubocop-rails", "~> 2.15", require: false # Automatic Rails code style checking tool
-  gem "rubocop-rspec", "~> 2.12", require: false # Code style checking for RSpec files
+  gem "rubocop", "~> 1.63", ">= 1.63.5", require: false # Automatic Ruby code style checking tool
+  gem "rubocop-performance", "~> 1.21", ">= 1.21.1", require: false # A collection of RuboCop cops to check for performance optimizations in Ruby code
+  gem "rubocop-rails", "~> 2.25", ">= 2.25.0", require: false # Automatic Rails code style checking tool
+  gem "rubocop-rspec", "~> 2.29", ">= 2.29.2", require: false # Code style checking for RSpec files
   gem "sassc-rails", "~> 2.1.2" # Integrate SassC-Ruby into Rails
 end
 
@@ -174,7 +174,7 @@ group :test do
   gem "test-prof", "~> 1.0" # Ruby Tests Profiling Toolbox
   gem "timecop", "~> 0.9" # A gem providing "time travel" and "time freezing" capabilities, making it dead simple to test time-dependent code
   gem "vcr", "~> 6.3" # Record your test suite's HTTP interactions and replay them during future test runs for fast, deterministic, accurate tests
-  gem "webmock", "~> 3.17", require: false # WebMock allows stubbing HTTP requests and setting expectations on HTTP requests
+  gem "webmock", "~> 3.23", ">= 3.23.1", require: false # WebMock allows stubbing HTTP requests and setting expectations on HTTP requests
   gem "with_model", "~> 2.1.7" # Dynamically build a model within an RSpec context
   gem "zonebie", "~> 0.6.1" # Runs your tests in a random timezone
 end
